@@ -71,11 +71,11 @@ public class CodeReader {
 						{
 							foreach(string s in entries)
 							{
-								String str = s.Trim();
 								if(s.Length > 0)
-									words.Enqueue(str);
+									words.Enqueue(s);
 							}
 						}
+						words.Enqueue("\n");
 					}
 				}
 				while (line != null);
